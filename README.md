@@ -49,5 +49,6 @@ src/
 - Managing search, filter, and sort state across components
 
 ## credits
+Built following [Pedro Tech](https://youtu.be/r47C9c4qCqE?si=ike2vUe4-NKQNz0y) tutorial on YouTube.
 
 Data provided by the [CoinGecko API](https://www.coingecko.com/en/api) — free public tier, no API key required.
