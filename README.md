@@ -1,16 +1,53 @@
-# React + Vite
+# Crypto Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A real-time cryptocurrency price tracker built with React and Vite. Browse the top 100 coins by market cap, search and sort them, then click into any coin for a detailed view with a 7-day price chart and market stats.
 
-Currently, two official plugins are available:
+## live demo 
+[Try it live] (https://crypto-project-puce-omega.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## tech stack
 
-## React Compiler
+- React 19
+- React Router 7
+- Recharts
+- Vite
+- JavaScript (ES6+)
+- CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## features
 
-## Expanding the ESLint configuration
+- Live prices and market data for the top 100 cryptocurrencies
+- Search by coin name or ticker symbol
+- Sort by rank, name, price, 24h change, or market cap
+- Toggle between grid and list view
+- Coin detail page with:
+  - 7-day interactive price chart
+  - 24h high / low
+  - Market cap, 24h volume, circulating supply, total supply
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## project structure
+
+```
+src/
+├── api/
+│   └── coinGecko.js       # API calls (market list, coin detail, chart data)
+├── components/
+│   └── CryptoCard.jsx     # Card used in the home grid/list
+├── pages/
+│   ├── Home.jsx           # Landing page — search, sort, and browse coins
+│   └── CoinDetail.jsx     # Detail page — chart and market stats for one coin
+├── utils/
+│   └── formatter.js       # Price and market cap formatting helpers
+└── App.jsx                # Router setup
+```
+
+## what I learned
+
+- Fetching and displaying data from a public REST API
+- React Router for client-side navigation between pages
+- Building interactive charts with Recharts
+- Managing search, filter, and sort state across components
+
+## credits
+
+Data provided by the [CoinGecko API](https://www.coingecko.com/en/api) — free public tier, no API key required.
