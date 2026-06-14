@@ -13,6 +13,9 @@ export const Home = () => {
     const[searchQuery, setSearchQuery] = useState("");
 
     useEffect(() => {
+        // use this when you want to fetch every 30 seconds 
+        // const interval = setInterval(fetchCryptoData, 30000);
+        // return () => clearInterval(interval);
         fetchCryptoData();
     }, []);
 
@@ -59,7 +62,7 @@ export const Home = () => {
 
 
     return (
-        
+
         <div className="app">
             
             <header className="header">
@@ -119,6 +122,10 @@ export const Home = () => {
                         <CryptoCard crypto={crypto} key={key} />
                     ))}
                 </div>)}
+            
+            <footer className="footer">
+                <p>Data provided by CoinGecko API</p>
+            </footer>
         </div>
 
     );
