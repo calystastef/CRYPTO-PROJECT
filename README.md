@@ -3,7 +3,7 @@
 A real-time cryptocurrency price tracker built with React and Vite. Browse the top 100 coins by market cap, search and sort them, then click into any coin for a detailed view with a 7-day price chart and market stats.
 
 ## live demo 
-[Try it live] (https://crypto-project-puce-omega.vercel.app/)
+[Try it live](https://crypto-project-puce-omega.vercel.app/)
 
 ## tech stack
 
